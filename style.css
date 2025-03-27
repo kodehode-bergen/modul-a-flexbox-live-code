@@ -4,3 +4,150 @@ lighter purple: #A26769
 Beige: #D5B9B2
 eggshell: #ECE2D0
 grey: #CEBEBE */
+/*
+classes: travel-destinations, 
+Ids: profiling, agency-name, links, information, destinations, info, links-footer
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+header,
+footer {
+  background-color: #6d2e46;
+  max-height: 200px;
+  width: 100svw;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+#profiling {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo img {
+  max-width: 100px;
+}
+#agency-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  color: #ece2d0;
+}
+#links ul {
+  display: flex;
+  gap: 3rem;
+  list-style-type: none;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+}
+
+a:hover {
+  background-color: #a26769;
+  border-radius: 5px;
+  box-shadow: rgb(23, 23, 23) 5px 5px 10px;
+}
+main {
+  background-color: #cebebe;
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 100svw;
+  align-items: center;
+}
+#information {
+  background-color: #a26769;
+  max-width: 100svw;
+  text-align: center;
+  color: #ece2d0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+#information p {
+  padding: 0 30px;
+}
+#information h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+#destinations {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  max-width: 60svw;
+}
+.travel-destinations {
+  background-color: #ece2d0;
+  max-width: 400px;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  color: #6d2e46;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 30px 30px 0 0;
+}
+.travel-destinations h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  font-size: 20px;
+}
+.travel-destinations img {
+  max-width: 98%;
+  border-radius: 30px 30px 0 0;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+#info {
+  color: white;
+  font-size: 20px;
+  max-width: 500px;
+  padding-left: 10px;
+}
+#links-footer ul {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+}
+
+@media (max-width: 1400px) {
+  .travel-destinations {
+    max-width: 300px;
+  }
+  .travel-destinations h1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1066px) {
+  #destinations {
+    max-width: 80%;
+  }
+  .travel-destinations {
+    max-width: 200px;
+  }
+  li a,
+  p {
+    font-size: 14px;
+  }
+  #info {
+    max-height: 100px;
+    overflow: scroll;
+  }
+  #links-footer {
+    gap: 5px;
+    overflow: scroll;
+  }
+}
